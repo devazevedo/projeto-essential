@@ -1,13 +1,10 @@
-Essential Customers
-Descrição concisa do seu projeto.
+*Requisitos
 
-Requisitos
+- Ultima versão do xampp.
+- Ultima versão do phpMyAdmin.
+- Editor de código(recomendado:VScode).
 
-Ultima versão do xampp.
-Ultima versão do phpMyAdmin.
-Editor de código(recomendado:VScode).
-
-Instalação
+*Instalação
 
 - Clone o repositório para a sua máquina local.
 
@@ -19,7 +16,7 @@ Instalação
 
 - Abra seu navegador e acesse a url: http://localhost/projeto-essential/views/Clientes.php
 
-Uso
+*Uso
 
 - Abra seu navegador e acesse a url: http://localhost/projeto-essential/views/Clientes.php
 
@@ -37,13 +34,12 @@ Uso
 
 - No canto superior esquerdo do relatório temos um filtro de busca de clientes, ele aceita as seguintes pesquisas: id, nome(parcial), cpf, email(parcial) e telefone. Após digitar o que você deseja filtrar é so pressionar a tecla 'enter' que o relatório ja será atualizado com sua busca.
 
-Estrutura do Projeto
-Descreva a estrutura de diretórios do projeto e a função principal de cada arquivo. Isso ajudará o recrutador a entender melhor a organização do seu código.
+*Estrutura do Projeto
+
 - O projeto foi estruturado com MVC.
 - Temos um arquivo separado para fazer a conexão com o banco de dados e outro para fazer a ligação com a controller, fora isso temos o tradicional MVC que conta com: Model, View e controller.
 
-Tecnologias Utilizadas
-Liste as principais tecnologias e bibliotecas que você utilizou no seu projeto. Isso pode incluir:
+*Tecnologias Utilizadas
 
 PHP
 HTML
