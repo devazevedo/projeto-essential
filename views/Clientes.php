@@ -229,6 +229,7 @@
                 document.getElementById('cpf').value = '';
                 document.getElementById('email').value = '';
                 document.getElementById('celular').value = '';
+                document.getElementById("imageInput").value = '';
                 document.getElementById("btnSendForm").innerText = 'Cadastrar'
             }
             document.getElementById("imageInput").setAttribute("required", true)
@@ -244,6 +245,7 @@
             document.getElementById('cpf').value = '';
             document.getElementById('email').value = '';
             document.getElementById('celular').value = '';
+            document.getElementById("imageInput").value = '';
         };
     }
 

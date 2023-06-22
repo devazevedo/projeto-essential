@@ -13,15 +13,19 @@ class ClienteController
 
     function getCustomers()
     {
-        $filter = $_GET['filter'];
-        $filterSoNumero = null;
-        if (!empty($filter)) {
-            $filterSoNumero = preg_replace('/[^\d]/', '', $filter);
-            if (!empty($filterSoNumero)) {
-                $filterSoNumero = intval($filterSoNumero);
+        if(!empty($_GET['filter'])){
+            $filter = $_GET['filter'];
+            $filterSoNumero = null;
+            if (!empty($filter)) {
+                $filterSoNumero = preg_replace('/[^\d]/', '', $filter);
+                if (!empty($filterSoNumero)) {
+                    $filterSoNumero = intval($filterSoNumero);
+                }
             }
+            $clientes = $this->model->getCustomers($filterSoNumero, $filter);
+        }else{
+            $clientes = $this->model->getCustomers();
         }
-        $clientes = $this->model->getCustomers($filterSoNumero, $filter);
         echo json_encode($clientes);
     }
 

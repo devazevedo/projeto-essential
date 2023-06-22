@@ -1,0 +1,52 @@
+Essential Customers
+Descrição concisa do seu projeto.
+
+Requisitos
+
+Ultima versão do xampp.
+Ultima versão do phpMyAdmin.
+Editor de código(recomendado:VScode).
+
+Instalação
+
+- Clone o repositório para a sua máquina local.
+
+- Crie um diretorio na pasta htdocs do xampp.
+
+- No phpMyAdmin crie um database com o nome essential apos isso use a função importar e selecione o arquivo essential.sql nessa importação ja está sendo inserido um primeiro usuário.
+
+- Configure as informações de conexão com o banco de dados no arquivo configuration/connect.php.
+
+- Abra seu navegador e acesse a url: http://localhost/projeto-essential/views/Clientes.php
+
+Uso
+
+- Abra seu navegador e acesse a url: http://localhost/projeto-essential/views/Clientes.php
+
+- Caso o passo a passo de instalação tenha sido seguido da maneira correta e o as configurações necessarias tenham sido feitas a aplicação já estara aparecendo na tela.
+
+- Se o arquivo essential.sql não teve alterações ja vai ter um cliente cadastrado caso contrario no canto superior direito do relatório tem um botão para adicionar cliente.
+
+- O formulario de cadastro de cliente tem 5 inputs sendo eles: nome, cpf, email, celular e foto. Todos eles são obrigatórios.
+
+- Após cadastrado ele o novo cliente já será exibido no relatório. Cada cliente conta com duas ações: excluir e editar.
+
+- Ao excluir será exibida uma mensagem de confirmação, caso confirme, a exclusão é efetuada e o usuário ja sai do relatório.
+
+- Ao editar um formulario com a mesma estrutura do formulario de cadastro se abre com as informações do cliente para serem editadas.
+
+- No canto superior esquerdo do relatório temos um filtro de busca de clientes, ele aceita as seguintes pesquisas: id, nome(parcial), cpf, email(parcial) e telefone. Após digitar o que você deseja filtrar é so pressionar a tecla 'enter' que o relatório ja será atualizado com sua busca.
+
+Estrutura do Projeto
+Descreva a estrutura de diretórios do projeto e a função principal de cada arquivo. Isso ajudará o recrutador a entender melhor a organização do seu código.
+- O projeto foi estruturado com MVC.
+- Temos um arquivo separado para fazer a conexão com o banco de dados e outro para fazer a ligação com a controller, fora isso temos o tradicional MVC que conta com: Model, View e controller.
+
+Tecnologias Utilizadas
+Liste as principais tecnologias e bibliotecas que você utilizou no seu projeto. Isso pode incluir:
+
+PHP
+HTML
+CSS
+JavaScript
+Banco de dados (MySQL, PostgreSQL, etc.)
