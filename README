@@ -10,7 +10,7 @@
 
 - No phpMyAdmin crie um database com o nome essential apos isso use a função importar e selecione o arquivo essential.sql nessa importação ja está sendo inserido um primeiro usuário.
 
-- Configure as informações de conexão com o banco de dados no arquivo configuration/connect.php.
+- Configure as informações de conexão com o banco de dados no arquivo configuration/connect.php. Certifique-se que o usuário e a senha informadas existem.
 
 - Abra seu navegador e acesse a url: http://localhost/projeto-essential/views/Clientes.php
 
