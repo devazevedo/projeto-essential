@@ -6,9 +6,7 @@
 
 *Instalação
 
-- Clone o repositório para a sua máquina local.
-
-- Crie um diretorio na pasta htdocs do xampp.
+- Clone o repositório para a sua máquina local e coloque o diretorio na pasta htdocs do xampp.
 
 - No phpMyAdmin crie um database com o nome essential apos isso use a função importar e selecione o arquivo essential.sql nessa importação ja está sendo inserido um primeiro usuário.
 
