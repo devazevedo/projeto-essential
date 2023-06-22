@@ -63,29 +63,7 @@ body {
   button:hover, input[type="submit"]:hover {
     background-color: #333;
   }
-  
-  /* Estilizando o formulário */
-  form {
-    margin-top: 20px;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  form input[type="text"], form input[type="email"], form input[type="tel"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  form input[type="file"] {
-    margin-top: 10px;
-  }
-  
+
   /* Estilizando as miniaturas de imagem */
   table td img {
     width: 50px;
@@ -95,8 +73,119 @@ body {
     object-position: center;
     margin-right: 10px;
   }
+
+  #table_users {
+    width: 95%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 8vw;
+    padding: 20px;
+}
+
+#divfiltro {
+    overflow: hidden;
+    position: relative;
+    width: 15%;
+}
+
+#btnAddCustomers {
+    background-color: #72cf72;
+    width: 2%;
+    cursor: pointer;
+    display: flex;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconAddCustomer {
+    color: #fff;
+}
+
+#iconAddCustomer:hover {
+    color: #1b8e1d;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 6vw;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
   
-  input {
+  #table_users input {
     color: #fff;
     font-size: 14px;
     width: 100%;
@@ -106,18 +195,18 @@ body {
     border-radius: 4px;
   }
   
-  label {
+  #table_users label {
     color: #fff;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -5px;
     width: 100%;
     height: 100%;
     pointer-events: none;
     border-bottom: 1px solid #ffffff;
   }
   
-  span {
+  #table_users span {
     position: absolute;
     bottom: 5px;
     left: 5px;
@@ -125,7 +214,7 @@ body {
     transition: all 0.3s ease;
   }
   
-  label::after {
+  #table_users label::after {
     content: "";
     position: absolute;
     left: 0;
@@ -137,15 +226,15 @@ body {
     transition: all 0.3s ease;
   }
   
-  input:focus + label span,
-  input:valid + label span {
+  #table_users input:focus + label span,
+  #table_users input:valid + label span {
     transform: translateY(-150%);
     font-size: 14px;
     bottom: -3px;
     color: #000000;
   }
   
-  input:focus + label::after,
-  input:valid + label::after {
+  #table_users input:focus + label::after,
+  #table_users input:valid + label::after {
     transform: translateX(0%);
   }
