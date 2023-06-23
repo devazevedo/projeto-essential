@@ -33,25 +33,20 @@ CREATE TABLE `clientes` (
   `cpf` varchar(11) DEFAULT NULL,
   `email` varchar(80) DEFAULT NULL,
   `celular` varchar(11) DEFAULT NULL,
-  `foto` varchar(255) DEFAULT NULL
+  `foto` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `clientes`
---
-
-INSERT INTO `clientes` (`id`, `nome`, `cpf`, `email`, `celular`, `foto`) VALUES
-(1, 'Primeiro Cliente', '11111111111', 'teste@gmail.com', '48999999999', ''),
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `clientes`
+-- Extraindo dados da tabela `clientes`
 --
-ALTER TABLE `clientes`
-  ADD PRIMARY KEY (`id`);
+
+INSERT INTO `clientes` (`id`, `nome`, `cpf`, `email`, `celular`, `foto`) VALUES
+(1, 'Primeiro Cliente', '11111111111', 'teste@gmail.com', '48999999999', '');
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
